@@ -1,0 +1,384 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'arial';
+    font-size: 16px;
+    background-color: rgb(209, 192, 192);
+}
+
+/* No olvides suscribirte a AlexCG Design */
+/*
+Web hecha con AlexCG Design, si te sirvió la plantilla por favor entra a AlexCG Design
+		esta plantilla es libre para usar, así como otras plantillas más que tenemos en el canal...
+		->>>> https://www.youtube.com/alexcgdesign <<<<-
+*/
+/* Header */
+
+header {
+    width: 100%;
+    height: 850px;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.8)),url(../images/templo.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+}
+
+header .textos {
+    margin-top: 50px;
+}
+
+header .titulo {
+    font-size: 85px;
+}
+
+header .subtitulo {
+    font-size: 42px;
+    font-weight: 300;
+    margin-bottom: 32px;
+}
+
+.direccion{
+    color: rgb(37, 37, 36);
+}
+
+.sesgoabajo {
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-width: 0 0 30vh 100vw;
+    border-style: solid;
+    border-color: transparent transparent rgb(209, 192, 192) transparent;
+}
+
+.sesgoarriba {
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-width: 35vh 100vw 0 0;
+    border-style: solid;
+    border-color: rgb(209, 192, 192) transparent transparent transparent;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    padding: 10px 0;
+}
+
+/* Main */
+
+.sobre-nosotros {
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: 55px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+
+.parrafo {
+    margin-bottom: 13px;
+    font-weight: 300;
+    font-size: 30px;
+    text-align: justify;
+    line-height: 24px;
+    color: rgb(24, 16, 16);
+}
+
+.galeria {
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.imagenes {
+    width: 20%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+
+.imagenes img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.encima {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(52, 73, 94, 0.815);
+}
+
+.encima h2 {
+    position: relative;
+    top: 45%;
+    text-align: center;
+    color: #fff;
+}
+
+.encima div {
+    position: relative;
+    display: block;
+    top: 46%;
+    width: 40px;
+    height: 5px;
+    background: #fff;
+    margin: auto;
+}
+
+.cards {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    margin: 0 0 0 0;
+    width: 40%;
+    height: 300px;
+    text-align: center;
+    padding: 50px;
+    box-shadow: 0px 0px 4px 0 rgba(52, 73, 94, 0.849);
+}
+
+.cards img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.fondo {
+    height: 200px;
+    position: relative;
+    border-color: transparent transparent #2c3e50 transparent;
+    overflow: hidden;
+    background-attachment: fixed;
+    background-position: center;
+    padding-top: 130px;
+}
+
+.sesgoabajo-unico {
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-width: 0 0 15vh 100vw;
+    border-style: solid;
+    border-color: transparent transparent rgb(182, 165, 165) transparent;
+}
+
+.titulo-patrocinadores,
+.subtitulo-patrocinadores {
+    color: #fff;
+    text-align: center;
+}
+
+.titulo-patrocinadores {
+    font-size: 56px;
+    margin-top: 48px;
+}
+
+.subtitulo-patrocinadores {
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 64px;
+}
+
+.clientes {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 64px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.cliente {
+    width: 30%;
+}
+
+.cliente img {
+    width: 100%;
+}
+
+/* Footer */
+
+footer {
+    background: rgb(182, 165, 165);
+    height: auto;
+}
+
+.titulo-footer,
+.subtitulo-footer {
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+    font-size: 56px;
+}
+
+.subtitulo-footer {
+    font-size: 25px;
+    margin-bottom: 64px;
+}
+
+footer p{
+    color: #fff;
+}
+
+/*COUNTDOWN*/
+
+.container-countdown{
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color:rgb(182, 165, 165);
+}
+
+.countdown{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    flex-wrap: wrap;
+}
+
+.countdown div{
+    display: grid;
+    place-items: center;
+    padding: 10px;
+}
+
+.container-countdown h1{
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    padding: 30px 10px;
+}
+
+.container-countdown p{
+    display: grid;
+    place-items: center;
+    border: solid 1px #fff;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: rgb(59, 55, 55);
+}
+
+.container-countdown span{
+    display: block;
+    padding: 10px;
+    text-align: center;
+    color: #166e61;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+/* Responsive */
+
+@media screen and (max-width:900px) {
+    .card {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width:610px) {
+    header .textos {
+        margin-top: 130px;
+    }
+
+    header .titulo {
+        font-size: 55px;
+    }
+
+
+
+    .none {
+        display: none
+    }
+
+    .imagenes {
+        flex-grow: 1;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .fondo {
+        height: auto;
+    }
+
+    .especial {
+        display: none;
+    }
+
+    .cliente {
+        width: 90%;
+        height: 200px;
+        margin-bottom: 50px;
+    }
+}
+
+@media  screen and(max-width:1000px) {
+    header .subtitulo{
+        font-size: 1px;
+        display: flex;
+    }
+}
+
+@media screen and (max-width:414px) {
+    header .textos {
+        margin-top: 100px;
+    }
+
+    header .titulo {
+        font-size: 55px;
+    }
+
+    header .subtitulo {
+        font-size: 25px;
+        margin-bottom: 32px;
+    }
+
+    .sobre-nosotros {
+        font-size: 46px;
+    }
+
+    .slogan {
+        font-size: 20px;
+    }
+
+    .titulo-patrocinadores {
+        font-size: 46px;
+    }
+
+    .subtitulo-patrocinadores {
+        font-size: 20px;
+    }
+}
